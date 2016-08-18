@@ -23,9 +23,13 @@ a {
 #homeHeader{
 background-image: url('../img/sky.jpeg');
   background-size: cover; 
-  height:700px;
+    height: 800px;
+    margin-bottom:0px;
 }
 
+.jumbotron{
+  margin-bottom: 0px;
+}
 
 #blogHeader{
 background-image: url('../img/photo.jpg');
@@ -33,11 +37,18 @@ background-image: url('../img/photo.jpg');
   height:600px;
 }
 
+
+.copyright {
+  background-color: #000;
+  width:100%;
+}
+
 #addHeader{
   background-image: url('../img/code.jpg');
   background-size: cover; 
   height:500px;
 }
+
 
 
 .addContent{
@@ -48,6 +59,9 @@ background-image: url('../img/photo.jpg');
   background-color:#b9b9b9;
 }
 
+#blogContent{
+  padding-top: 35px;
+}
 
 .headerBox{
 background-color: rgba(45, 47, 43, 0.5);
@@ -348,7 +362,7 @@ hr.small {
 footer {
   background-color:#000;
   height:80px;
-  padding:10px;
+  padding-top:10px;
 }
 footer .list-inline {
   margin: 0;
