@@ -190,10 +190,10 @@ function sessionCheck(req,res,next){
 }
 
 
-// module.exports.close = function() {
-//   console.log('shutting down the server...');
-//   server.close();
-// };
+module.exports.close = function() {
+  console.log('shutting down the server...');
+  server.close();
+};
 
 // server = app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
 //   var addr = server.address();

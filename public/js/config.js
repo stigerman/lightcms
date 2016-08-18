@@ -45,7 +45,7 @@ app.config(function($stateProvider, $httpProvider, $urlRouterProvider, $location
         
         $stateProvider
             .state('blogread', {
-                url:'/blog/:url', 
+                url:'/pages/details/:url', 
                 templateUrl: 'templates/blogpage.html',
                 controller: 'BlogPageCtrl'
         });

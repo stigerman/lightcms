@@ -1,6 +1,7 @@
 body {
 font-family: 'Open Sans', sans-serif;
 font-weight: 700;
+background-color: #fff
 }
 
 a {
@@ -29,6 +30,10 @@ background-image: url('../img/sky.jpeg');
 
 .jumbotron{
   margin-bottom: 0px;
+}
+
+#title{
+  height:350px;
 }
 
 #blogHeader{
