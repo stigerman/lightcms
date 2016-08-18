@@ -180,6 +180,8 @@ app.config(function($stateProvider, $httpProvider, $urlRouterProvider, $location
         $http.get('/pages').then(function(response){
             console.log(response);
             $scope.pages = response.data;
+             $scope.letterLimit = 150;
+
         });
 
           $scope.readmore = function(url) {

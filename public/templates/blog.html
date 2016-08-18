@@ -7,10 +7,12 @@
 <div class="container">
     <button type="button" class="btn btn-success"  ui-sref="adminlogin">Want to Contribute?</button>
     <div ng-repeat ="page in pages">
-            <h1>{{page.title}}</h1>
-            <hr>
-            <p>{{page.content}}</p>
+            <h1 class="post-title">{{page.title}}</h1>
+            <hr class="small">
+            <h4 class="post-subtitle">{{page.content | limitTo:letterLimit}}...</h4>
             <button  class="btn btn-primary" ng-click="readmore(page.url)">Read More</button>
+            <p class="post-meta">Posted by <a href="#">Stigerman</a></p>
+
     </div>
 </div> 
 <br>

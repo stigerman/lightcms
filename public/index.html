@@ -2,7 +2,7 @@
 <html>
 
 <head> 
-    <title>REDRIVE - The Reliability of Car Dealerships, The Affordability of Craigslist</title>
+    <title>CodeBlog.io - A place to blog and learn code!</title>
     <meta name= "description" content="Sick of Car Dealership? We are! Sell your car from the comfort of your couch, get the best rates when buying. Let’s make car and selling buying suck less">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -15,32 +15,115 @@
 </head>
 
 <body ng-app="app">
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-    <ul class="nav nav-pills">
-      <li role="presentation"><a ui-sref="blog">Blog</a></li>
-      <li role="presentation"><a href="adminreg">Register</a></li>
-      <li role="presentation"><a href="adminlogin">Login</a></li>
-    </ul>
-  </div>
-</nav>
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CodeBlog.io</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a ui-sref="blog">Blog</a>
+                    </li>
+                    <li>
+                        <a ui-sref="adminreg">Register</a>
+                    </li>
+                    <li>
+                        <a ui-sref="adminlogin">Login</a></li>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a href="about.html">About</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <!--<header class="intro-header">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+    <!--                <div class="site-heading">-->
+    <!--                    <h1>Clean Blog</h1>-->
+    <!--                    <hr class="small">-->
+    <!--                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</header>-->
+
+    <!-- Main Content -->
+    <!--<div class="container">-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+    <!--            <div class="post-preview">-->
+    <!--                <a href="post.html">-->
+    <!--                    <h2 class="post-title">-->
+    <!--                        Man must explore, and this is exploration at its greatest-->
+    <!--                    </h2>-->
+    <!--                    <h3 class="post-subtitle">-->
+    <!--                        Problems look mighty small from 150 miles up-->
+    <!--                    </h3>-->
+    <!--                </a>-->
+    <!--                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>-->
+    <!--            </div>-->
+    <!--            </div>-->
+    <!--            </div>-->
+    <!--            </div>-->
 
 
-<div ui-view autoscroll></div>
+
+
+<div ui-view></div>
 
 
     <footer>
 
-        <div class- "container">
-            <p class="footer-company-name">CMS &copy; 2016</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
         </div>
     </footer>
 

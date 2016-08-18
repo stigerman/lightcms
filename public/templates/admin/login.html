@@ -1,20 +1,64 @@
-<h1>Login</h1>
-<hr/>
 
-<form role="form" id="login" ng-submit="login(credentials)">
 
-<div class="form-group">
-<label>Login</label>
+<!--<form role="form" id="login" ng-submit="login(credentials)">-->
 
-<input class="form-control" type="text" ng-model="credentials.username"/>
+<!--<div class="form-group">-->
+<!--<label>Login</label>-->
+
+<!--<input class="form-control" type="text" ng-model="credentials.username"/>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label>Password</label>-->
+<!--<input class="form-control" type="password"  ng-model=" credentials.password"/>-->
+<!--</div>-->
+
+<!--<input type="submit" class="btn btn-success" value="Login">-->
+<!--</div>-->
+<!--</form>-->
+<section class="formbg">
+ <br>
+<br>
+<br>
+<div class="headerBox">
+ <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1>Login</h1>
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form name="sentMessage" id="login" ng-submit="login(credentials)" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Username</label>
+                            <input type="text"  ng-model=" credentials.username" class="form-control" placeholder="Username" id="usernam" required data-validation-required-message="Please enter your username.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Password</label>
+                            <input type="password"  ng-model=" credentials.password" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Please enter your password">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-6">
+                            <button type="submit" class="btn btn-default" value="Login">Send</button>
+                        </div>
+                         <div class="form-group col-xs-6">
+                             <button class="btn btn-default" ui-sref="adminreg">Not A User?</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ 
 </div>
-<div class="form-group">
-<label>Password</label>
-<input class="form-control" type="password"  ng-model=" credentials.password"/>
-</div>
-
-<input type="submit" class="btn btn-success" value="Login">
-</div>
-</form>
-
-<button class="btn btn-primary" ui-sref="adminreg">Not A User?</button>
+ 
+</section>
+    
