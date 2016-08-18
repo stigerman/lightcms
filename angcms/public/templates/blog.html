@@ -1,0 +1,17 @@
+<div id="blogHeader" class="jumbotron">
+    <div id="login-page">
+    <h1>BLOG</h1>
+    </div>
+</div>
+<Br>
+<div class="container">
+    <button type="button" class="btn btn-success"  ui-sref="adminlogin">Want to Contribute?</button>
+    <div ng-repeat ="page in pages">
+            <h1>{{page.title}}</h1>
+            <hr>
+            <p>{{page.content}}</p>
+            <button  class="btn btn-primary" ng-click="readmore(page.url)">Read More</button>
+    </div>
+</div> 
+<br>
+<br>

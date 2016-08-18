@@ -1,0 +1,36 @@
+<Br>
+  <div id="addHeader" class="jumbotron">
+    <div id="login-page">
+        <h1>Add, Edit, Delete Posts</h1>
+        <h3>Try to keep it coding related ;)</h3>
+    </div>
+  </div>
+<br>
+<h1>Pages List</h1>
+<hr>
+<button><a ui-sref="adminedit" class="btn btn-success pull-right"> Add New Page</a></button>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Menu Index</th>
+      <th>Title</th>
+      <th>URL</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tr ng-repeat="page in allPages">
+    <td>{{page.menuIndex}}</td>
+    <td>{{page.title}}</td>
+    <td>{{page.url}}</td>
+    <td> <a ng-click="editPage(page._id)">Edit</a>
+    </td>
+    <td> <a ng-href="#" ng-click="deletePage(page._id)">Delete</a>
+    </td>
+  </tr>
+</table>
+
+  <div class="jumbotron">
+    <div message-flash> </div>
+    <div  class="container" ng-view></div>
+  </div>
