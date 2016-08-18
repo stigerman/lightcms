@@ -4,13 +4,13 @@ app.config(function($stateProvider, $httpProvider, $urlRouterProvider, $location
         $urlRouterProvider.otherwise('/home');   
         $stateProvider
             .state('adminlogin', {
-                url: '/adminlogin',    
+                url: '/login',    
                 templateUrl: 'templates/admin/login.html',
                 controller: 'AdminLoginCtrl'
         })
         $stateProvider
             .state('adminreg', {
-                url: '/adminregister',    
+                url: '/register',    
                 templateUrl: 'templates/admin/register.html',
                 controller: 'AdminLoginCtrl'
         })
